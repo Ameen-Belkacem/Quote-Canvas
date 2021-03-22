@@ -1,0 +1,70 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script src="js/QuoteCanvas.js" charset="utf-8"></script>
+</head>
+<script>
+	var qcanvas = new QuoteCanvas(720, 720);
+	qcanvas.drawBGImage("./img/james_cameron.png", function (element) {
+		qcanvas.drawText(
+			"\"If you set your goals ridiculously high and it's a failure,"
+			+ "you will fail above everyone else's success.\" — James Cameron", {
+				textAlign: "center",
+				fontType: "normal",
+				fontSize: 32,
+				font: "Arial",
+				color: "#ffffff",
+				shadow: {
+					color: "#000000",
+					blur: 5,
+					x: 5,
+					y: 5,
+				},
+			}, { 
+				x: null, 
+				y: null
+			},
+			null
+		);
+
+		qcanvas.drawText(
+			"QuoteCanvas", {
+				textAlign: "center",
+				fontType: "normal",
+				fontSize: 26,
+				font: "Arial",
+				color: "#ffffff",
+				shadow: {
+					color: "#000000",
+					blur: 5,
+					x: 5,
+					y: 5,
+				},
+			}, { 
+				x: 80, 
+				y: 645
+			}
+		);
+
+		qcanvas.drawImage(
+			"./img/github.png", {
+				shadow: {
+					color: "#000000",
+					blur: 5,
+					x: 5,
+					y: 5,
+				},
+			}, { 
+				x: 30,
+				y: 650
+			}, { 
+				width: 40, 
+				height: 40
+			}
+		);
+	});
+</script>
+<body>
+</body>
+</html>		
